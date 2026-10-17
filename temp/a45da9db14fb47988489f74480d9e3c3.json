@@ -1,0 +1,101 @@
+[
+    {
+        "id_incident":"K-001",
+        "date_signalement":"2026-10-10",
+        "commune":"Gombe",
+        "type_probleme":"Inondation",
+        "quartier":"Boulevard du 30 Juin",
+        "resolution":"En cours",
+        "temps_resolution_heures":null
+    },
+    {
+        "id_incident":"K-002",
+        "date_signalement":"2026-10-11",
+        "commune":"Kalamu",
+        "type_probleme":"Délestage (Courant)",
+        "quartier":"Matonge",
+        "resolution":"Résolu",
+        "temps_resolution_heures":48.5
+    },
+    {
+        "id_incident":"K-003",
+        "date_signalement":"12\/10\/2026",
+        "commune":"ngaliema",
+        "type_probleme":"Erosions",
+        "quartier":"UPN",
+        "resolution":"Non résolu",
+        "temps_resolution_heures":null
+    },
+    {
+        "id_incident":"K-004",
+        "date_signalement":"2026-10-13",
+        "commune":"Gombe",
+        "type_probleme":"Inondation",
+        "quartier":"Boulevard du 30 Juin",
+        "resolution":"En cours",
+        "temps_resolution_heures":null
+    },
+    {
+        "id_incident":"K-005",
+        "date_signalement":"2026-10-14",
+        "commune":"Lemba",
+        "type_probleme":"Embouteillage",
+        "quartier":"Super Lemba",
+        "resolution":"Résolu",
+        "temps_resolution_heures":3.0
+    },
+    {
+        "id_incident":"K-006",
+        "date_signalement":"2026-10-14",
+        "commune":"Bandalungwa",
+        "type_probleme":"Inondation",
+        "quartier":"Tshibangu",
+        "resolution":"Résolu",
+        "temps_resolution_heures":-10.0
+    },
+    {
+        "id_incident":"K-007",
+        "date_signalement":null,
+        "commune":"Lingwala",
+        "type_probleme":"Délestage (Courant)",
+        "quartier":"Huileries",
+        "resolution":"Résolu",
+        "temps_resolution_heures":24.0
+    },
+    {
+        "id_incident":"K-008",
+        "date_signalement":"2026-10-15",
+        "commune":"Kalamu",
+        "type_probleme":"Délestage",
+        "quartier":"Matonge",
+        "resolution":"En cours",
+        "temps_resolution_heures":null
+    },
+    {
+        "id_incident":"K-009",
+        "date_signalement":"2026-10-16",
+        "commune":"NGALIEMA",
+        "type_probleme":"Erosions",
+        "quartier":"Mbinza Pigeon",
+        "resolution":"Résolu",
+        "temps_resolution_heures":72.0
+    },
+    {
+        "id_incident":"K-010",
+        "date_signalement":"2026-10-16",
+        "commune":"Gombe",
+        "type_probleme":"Inondation",
+        "quartier":"Gare Centrale",
+        "resolution":"Résolu",
+        "temps_resolution_heures":null
+    },
+    {
+        "id_incident":"K-004",
+        "date_signalement":"2026-10-13",
+        "commune":"Gombe",
+        "type_probleme":"Inondation",
+        "quartier":"Boulevard du 30 Juin",
+        "resolution":"En cours",
+        "temps_resolution_heures":null
+    }
+]

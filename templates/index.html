@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traducteur de fichiers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="conteneur">
+        <h1>Traducteur de fichiers</h1>
+
+        <section class="carte">
+            <h2>Formats de départ pris en charge</h2>
+            <ul class="liste">
+                {% for source, extensions in sources.items() %}
+                    <li><strong>{{ source }}</strong> ({{ extensions | join(", ") }})</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section class="carte">
+            <h2>Conversions possibles</h2>
+            <div class="tableau">
+                <table>
+                    <tr><th>Fichier de départ</th><th>Peut devenir</th></tr>
+                    {% for source, cibles in conversions.items() %}
+                        <tr><td>{{ source }}</td><td>{{ cibles | join(", ") }}</td></tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+
+        <section class="carte">
+            <h2>Convertir un fichier</h2>
+
+            {% if erreur %}
+                <p class="erreur">{{ erreur }}</p>
+            {% endif %}
+
+            <form method="post" enctype="multipart/form-data">
+                <label for="choisi">1. Mon fichier est un :</label>
+                <select id="choisi" name="choisi">
+                    {% for source in sources %}
+                        <option value="{{ source }}">{{ source }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="fichier">Fichier à téléverser :</label>
+                <input type="file" id="fichier" name="fichier" accept="{{ accept }}" required>
+
+                <label for="cible">2. Convertir en :</label>
+                <select id="cible" name="cible">
+                    {% for format in formats %}
+                        <option value="{{ format }}">{{ format }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="nom">Nom du fichier final :</label>
+                <input type="text" id="nom" name="nom" placeholder="resultat">
+
+                <label for="table">Nom de la table (SQL seulement) :</label>
+                <input type="text" id="table" name="table" placeholder="donnees">
+
+                <button type="submit">Convertir</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fichier prêt</title>
+    <meta http-equiv="refresh" content="1; url={{ url_for('telecharger', identifiant=identifiant, nom=nom) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="conteneur">
+        <h1>Traducteur de fichiers</h1>
+
+        <section class="carte">
+            <p class="succes">✅ Votre fichier a été converti et enregistré avec succès.</p>
+
+            <p>{{ source }} → {{ cible }} : <strong>{{ nom }}</strong></p>
+            <p>Le téléchargement démarre automatiquement. S'il ne démarre pas, utilise le bouton ci-dessous.</p>
+
+            <a class="bouton" href="{{ url_for('telecharger', identifiant=identifiant, nom=nom) }}">Télécharger {{ nom }}</a>
+            <a class="bouton secondaire" href="{{ url_for('accueil') }}">Convertir un autre fichier</a>
+        </section>
+    </main>
+</body>
+</html>
