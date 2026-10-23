@@ -1,0 +1,5 @@
+xarray
+pandas
+Flask
+pathlib
+sqlite
